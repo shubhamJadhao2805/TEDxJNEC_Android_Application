@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".QuizSection">
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="#E62B16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:isScrollContainer="true"
+        android:overScrollMode="always"
+        android:scrollbarSize="1dp"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:foregroundGravity="center_vertical|center"
+                android:gravity="center"
+                android:text="IDENTIFY THE OBJECT"
+                android:textColor="#D5EEECEC"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="26dp" />
+
+            <ImageView
+                android:id="@+id/quizImageView"
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="337dp"
+                android:layout_height="2dp"
+                android:background="#C4C4BFBF" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="23dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:buttonTint="#FFEE0F08"
+                android:onClick="select"
+                android:tag="1"
+                android:text="RadioButton"
+                android:textColor="#DAD3CDCD" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:buttonTint="#FFEE0F08"
+                android:onClick="select"
+                android:tag="2"
+                android:text="RadioButton"
+                android:textColor="#DAD3CDCD" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:buttonTint="#FFEE0F08"
+                android:onClick="select"
+                android:tag="3"
+                android:text="RadioButton"
+
+                android:textColor="#DAD3CDCD" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:buttonTint="#FFEE0F08"
+                android:onClick="select"
+                android:tag="4"
+                android:text="RadioButton"
+                android:textColor="#DAD3CDCD" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:background="@drawable/submitbutton"
+                android:onClick="submit"
+                android:textColor="#C9FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#C3000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

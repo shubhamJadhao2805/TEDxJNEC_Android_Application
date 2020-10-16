@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Speakers"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/place"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Place" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Quiz" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Team" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_send"
+            android:title="LeaderBoard"
+            android:visible="true" />
+    </group>
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/aboutus"
+                android:title="About us" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="LogOut" />
+        </menu>
+    </item>
+
+</menu>

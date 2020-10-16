@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "391509591578",
+    "firebase_url": "https://tedxjnec-bae5f.firebaseio.com",
+    "project_id": "tedxjnec-bae5f",
+    "storage_bucket": "tedxjnec-bae5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391509591578:android:3d17f67406b88041",
+        "android_client_info": {
+          "package_name": "com.example.tedxjnec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391509591578-4it3coa8m4ls603un9vcff1h7qaa3shp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADDQ9ZHdsPXUf2bv8hShvEwdopfHgPtDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391509591578-4it3coa8m4ls603un9vcff1h7qaa3shp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

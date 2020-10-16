@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".PlaceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="1dp"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarThumbVertical="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="409dp"
+                android:layout_height="60dp"
+                android:background="#E62B16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@android:drawable/ic_menu_mylocation"
+                app:layout_constraintEnd_toEndOf="@+id/map"
+                app:layout_constraintTop_toTopOf="@+id/map" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="0dp"
+                android:layout_height="306dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:srcCompat="@drawable/newback" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+                app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="@+id/imageView17"
+                app:layout_constraintTop_toTopOf="@+id/imageView17"
+                app:layout_constraintVertical_bias="0.74"
+                tools:context=".MapsActivity" />
+
+            <Button
+                android:id="@+id/registration"
+                android:layout_width="141dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#E62B16"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Rukhmini Auditorium :"
+                android:textAlignment="viewStart"
+                android:textColor="#E62B16"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="0dp"
+                android:layout_height="254dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Rukhmini Auditorium which will serve as a befitting indoor venue. It has been a cradle to quite a few of the city's most significant events and conferences. The lawn area immediately outside the main auditorium door will be utilised for conducting ice breakers and breakouts. We hope to blend in the TEDx spirit within the arena with sector installations making it a beautiful space!"
+                android:textAlignment="textStart"
+                android:textColor="#F8F7F7"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="PLACE"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

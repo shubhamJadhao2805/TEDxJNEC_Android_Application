@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_focused"
+    tools:context=".AboutUs">
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="#E62B16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00D51717"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="About Us"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="710dp"
+        android:layout_marginTop="5dp"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="244dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tedxjneclogo" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="271dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="ABOUT TEDxJNEC 2019"
+                android:textAlignment="center"
+                android:textColor="#E62B16"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="0dp"
+                android:layout_height="399dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Pioneering TEDx in Marathwada region in 2018, we are glad to carry forward its spirit by bringing TEDxJNEC 2019. The event aims at unifying people in their thoughts, actions, and motives through a journey that awakens and introspects one's inner self at close quarters. The host city Aurangabad has a legacy of defying the odds and is blessed with engineering wonders like Ajanta-Ellora caves, Kailash temple and many more. TEDxJNEC will take place at MGM's Jawaharlal Nehru Engineering College, located in the heart of Aurangabad city. The institute has carved a niche for itself in the field of technical education for 3 decades and continues to produce eminent leaders and professionals globally."
+                android:textAlignment="center"
+                android:textColor="#EBF7F6F6"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="126dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Contact us"
+                android:textAlignment="center"
+                android:textColor="#E62B16"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <ImageView
+                android:id="@+id/imageView73"
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/teamappfinal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
